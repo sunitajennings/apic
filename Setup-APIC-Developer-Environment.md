@@ -107,6 +107,9 @@ sudo apt-get install -y nodejs
 
 ### Part 8: Install Docker
 
+Follow instructions at: [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04]
+
+<!--
 1. Type  
 `docker`  
 Since it is not installed yet, the response suggests that you install it using apt install docker.io.  
@@ -119,6 +122,7 @@ Since it is not installed yet, the response suggests that you install it using a
 `sudo docker run hello-world`  
 You should see the response starting `Hello from Docker!`.  
 **NOTE**: You may need to run the command a second time to see the correct response.  
+-->
 
 
 ### Checking versions:
