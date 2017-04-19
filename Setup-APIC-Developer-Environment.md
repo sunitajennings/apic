@@ -105,9 +105,10 @@ sudo apt-get install -y nodejs
 ### Part 7: Install API Connect Developer Toolkit
 `sudo npm install -g apiconnect`
 
-### Part 8: Install Docker
+### Part 8: Install Docker & Docker Compose
 
-Follow instructions at: [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04]
+1. Instructions at: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+1. Instructions at: https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04
 
 <!--
 1. Type  
