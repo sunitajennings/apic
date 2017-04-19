@@ -30,6 +30,7 @@ This document provides the steps for installing the software I use for APIC -rel
 ### Part 3: Create a virtual machine 
 * Use the Ubuntu iso file as the OS in the VMware image: create a new virtual machine, and point it to the downloaded iso file.
 * I chose to store the virtual image as a single file for better performance. I do not need my development environment to be portable.
+* Machine resources: 8GB RAM (not sure if required) + 2 processors (required for datapower docker gateway)
 
 <!--
 ### Part 4: Install Java JDK 1.8 
