@@ -30,7 +30,7 @@ This document provides the steps for installing the software I use for APIC -rel
 ### Part 3: Create a virtual machine 
 * Use the Ubuntu iso file as the OS in the VMware image: create a new virtual machine, and point it to the downloaded iso file.
 * I chose to store the virtual image as a single file for better performance. I do not need my development environment to be portable.
-* Machine resources: 8GB RAM (not sure if required) + 2 processors (required for datapower docker gateway)
+* Machine resources: 12GB RAM (not sure if required. dp docker gw requires at least 4GB per validator) + 2 processors (required for datapower docker gateway)
 
 <!--
 ### Part 4: Install Java JDK 1.8 
@@ -110,6 +110,19 @@ sudo apt-get install -y nodejs
 
 1. Instructions at: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
 1. Instructions at: https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04
+
+**Found a problem with my set up:**
+`docker info` returns text with:
+`Total Memory: 11.9GiB`
+
+whereas docker-validator.js checks for:
+`Total Memory: (.*) GiB`
+*see the space before GiB that doesn't exist in my docker info output?*
+
+It's possible that this is due to differences between my version of docker (17.04.0-ce) and what the KC recommends (1.13+). I've asked in #gateway. In the meantime I hacked docker-validator.js to be a little friendlier to my setup.
+
+I've been running all kinds of dp policies locally ever since.
+
 
 <!--
 1. Type  
